@@ -2,6 +2,10 @@ from django.shortcuts import render
 from .models import Page_visits
 
 # Create your views here.
+
+
+def aboutview(request):
+  return visit(request)
  
 
 def visit(request):

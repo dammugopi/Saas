@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from  visiting.views import visit
+from  visiting.views import visit,aboutview
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home',visit)
+    path('home',visit),
+    path("about",aboutview)
      
 ]
